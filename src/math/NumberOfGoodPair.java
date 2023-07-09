@@ -2,6 +2,8 @@ package math;
 
 public class NumberOfGoodPair {
     public static void main(String[] args) {
+        System.out.println("1512. Number of Good Pairs");
+        System.out.println("===========================");
         System.out.println(numIdenticalPairs(new int[]{1,2,3,1,1,3}));
     }
 
