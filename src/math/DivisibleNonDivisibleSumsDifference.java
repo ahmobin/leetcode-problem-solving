@@ -18,7 +18,8 @@ public class DivisibleNonDivisibleSumsDifference {
         System.out.println("Enter divisible checking number: ");
         int m = scanner.nextInt();
 
-        System.out.println(differenceOfSums(n,m));
+        System.out.println(differenceOfSumsWay2(n,m));
+//        System.out.println(differenceOfSums(n,m));
 
     }
 
@@ -35,5 +36,12 @@ public class DivisibleNonDivisibleSumsDifference {
         }
 
         return num1 - num2;
+    }
+
+    private static int differenceOfSumsWay2(int n, int m) {
+        int sumOfTheRange = (n*(n+1))/2;
+        int x = n/m;
+        int sumOfNumInDivisibleNums = (x*(x+1))/2;
+        return sumOfTheRange - 2 * (m*sumOfNumInDivisibleNums);
     }
 }
